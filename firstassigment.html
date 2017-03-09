@@ -1,0 +1,77 @@
+<!Doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>My Home Assigment</title>
+<style>
+fieldset{background:lightyellow;border:10px solid yellow;margin-bottom:10px;
+width:720px}
+label{width:180px}
+label{display:inline-block;text-align:right;text-align:top}
+textarea{width:360px; height:50px}
+.text{width:auto}
+</style>
+</head>
+<body>
+  <h1>Please Enter Your Details For Our Dating Website!</h1><br>
+  <form method="post" enctype="multipart/form-data"
+  action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" >
+    <fieldset>
+      <legend>Your Face</legend>
+      <label for="image">Your Image:</label>
+      <input type="file" id="image" name="image" required><br>
+      <label for="preview">Image preview:</label>
+      <img id="preview" name="preview"> <br>
+    </fieldset>
+    <fieldset>
+      <legend>Your General Details</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required><br>
+      <label for="male" for="female">Gender:</label>
+      <input type="radio" id="male" value="male" required>Male
+      <input type="radio" id="female" value="female" required>Female <br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="0" max="99" value="18" required><br>
+      <label for="date">Date of birth:</label>
+      <input type="date" id="date" name="date"><br>
+      <label for="color">Favorite color:</label>
+      <input type="color" id="color" name="color"><br>
+      <label for:"which country">Which country:</label>
+      <select name="cities" id="which country">
+        <option value="not">No selection</option>
+        <option value="prg">Prague</option>
+        <option value="bud">Budapest</option>
+        <option value="vie">Vienna</option>
+        <option value="ro">Rome</option>
+        <option value="os">Oslo</option>
+        </select>
+    </fieldset>
+    <fieldset>
+      <legend>Your Indicators</legend>
+      <label for="short" for="tall">Height:</label>
+      Short<input type="range" class="mytext" min="0" max="100" step="1" value="50"
+      id="short" id="tall" name="height">Tall<br>
+      <label for="poor" for="rich">Salery:</label>
+      Poor<input type="range" min="0" max="100" step="1" value="50"
+      id="poor" id="rich" name="salery">Rich<br>
+    </fieldset>
+    <fieldset>
+      <legend>Your Contact Information</legend>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" name="mobile"><br>
+      <label for="adress">Adress:</label>
+      <textarea rows="2" cols="25" id="adress" name="adress"></textarea><br>
+      <label for="email" for="whatsapp" for="in-app chat" class="text">
+      Method to contact you:</label>
+      <input type="checkbox" name="email" value="email" id="email">Email
+      <input type="checkbox" name="whatsapp" value="whatsapp" id="whatsapp">Whatsapp
+      <input type="checkbox" name="in-app chat" value="in-app chat" id="in-app chat">
+      In-app chat
+    </fieldset>
+    <input type="submit" value="Submit">
+    <br>
+  </form>
+</body>
+</html>
